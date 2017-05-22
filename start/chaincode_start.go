@@ -80,7 +80,7 @@ func (t *SimpleChaincode) Query(stub shim.ChaincodeStubInterface, function strin
     return nil, errors.New("Received unknown function query")
 }
 
-//write function
+//write function 
 func (t *SimpleChaincode) write(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
     var name, value string
     var err error
